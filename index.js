@@ -217,9 +217,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilometers){
     /*add your code here*/
+    return kilometers/1.609
   }
+  console.log(miles(3))
 
 
 
@@ -231,9 +233,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(cm){
     /*add your code here*/
+    return cm / 30.48
   }
+  console.log(feet(3));
  
 
 
@@ -247,9 +251,21 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(num){
+  /*add your code here*/
+
+ while(num > 0){
+   var num2 = num - 1;
+   
+   var song =  num + " bottles of soda on the wall,"+ num +" bottles of soda, take one down pass it around " + num2 +" bottles of soda on the wall";
+    
+   num--;
+   console.log(song);
+  
+ }
+return song;
+}
+console.log(annoyingSong(3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
