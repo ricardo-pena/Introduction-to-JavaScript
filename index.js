@@ -17,7 +17,12 @@ Do the following:
 
    HINT: no function required
 */
-
+var votingAge = 20;
+if(votingAge >= 18){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 
 /*
@@ -30,8 +35,15 @@ Do the following:
 
    HINT: no function required
 */
+var a = 1;
+var b = 10;
 
-
+if (b >= 5){
+  a = 7;
+}else {
+  a = 0;
+}
+console.log(a);
 
 
 
@@ -46,6 +58,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+var a ="1999";
+a =1999;
+console.log(a);
+
 
 
 
@@ -58,9 +74,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(a,b){
     /*add your code here*/
+    return a * b;
   }
+  console.log(multiply(10,5));
 
 
 
@@ -74,9 +92,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+function dogYears(age){
     /*add your code here*/
+    return  7*age;
 }
+console.log(dogYears(12));
 
 
 
@@ -133,9 +153,31 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer =Math.random();
+
+if (computer <= 0.34){
+  computer= "rock";
+}else if(computer <=0.67){
+  computer = "paper";
+}else if(computer >0.67){
+  computer ="scissors";
+}
+console.log(computer);
 
 function game(user, computer){
     /*add your code here*/
+    if(user === computer){
+      return "it's a tie";
+    }else if(user === "rock" && computer === "scissors"){
+      return "you win!";
+    }else if(user === "paper" && computer === "rock"){
+      return "you win!";
+    }else if(user === "scissors" && computer === "paper"){
+      return "you win!";
+    }else {
+      return "you lose!";
+    }
+  console.log(game);
 }
   
   
